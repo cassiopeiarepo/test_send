@@ -1,0 +1,44 @@
+<dummy name="Hersztu" >
+  <dummy name="Persons" >
+    <person name="Tata" first_name="Wojciech" second_name="Hersztowski" >
+    </person>
+    <person name="Paweł" first_name="Paweł" second_name="Hersztowski" >
+    </person>
+    <person name="Ania" first_name="Anna" second_name="Hersztowska" >
+    </person>
+    <person name="Ewa" first_name="Ewa" second_name="Hersztowska" >
+    </person>
+  </dummy>
+  <dummy name="Projects" >
+    <project name="Dom" >
+      <task name="WieczornaHigiena" start="" estimeted="0:10" repeat_days="1" >
+      </task>
+      <task name="Prysznic" start="" estimeted="0:15" repeat_days="2" >
+      </task>
+    </project>
+  </dummy>
+  <dummy name="Calendar" >
+    <dummy name="2023" >
+      <dummy name="6" >
+        <dummy name="16" >
+          <var name="current_day" value="2023/06/16" >
+          </var>
+          <event start="2023/06/16 15:20" duration="1:0" >
+            <param_description >
+              Badanie okrsowe							wymagane dokumenty :							- aktualna decyzja o niepełnosprawności z mops							- decyzja z zus (nie konieczna)							- wypisy ze szpitali							Koszt badania							95zł 						
+            </param_description>
+          </event>
+        </dummy>
+        <dummy name="19" >
+          <var name="current_day" value="2023/06/19" >
+          </var>
+          <event task="/Projects/Dom/Prysznic" start="2023/06/19 05:30" duration="0:15" >
+          </event>
+          <event task="/Projects/Dom/WieczornaHigiena" start="2023/06/19 21:00" 
+            duration="0:10" >
+          </event>
+        </dummy>
+      </dummy>
+    </dummy>
+  </dummy>
+</dummy>
